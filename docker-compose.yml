@@ -1,0 +1,18 @@
+version: "3"
+services:
+  db:
+    image: arangodb/arangodb:3.10.5
+    restart: unless-stopped
+    environment:
+      - ARANGO_ROOT_PASSWORD=secret
+      - ARANGO_NO_AUTH=1
+    ports:
+      - ${PUBLIC_DB_PORT}:8529
+  server:
+    build:
+      context: .
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - ${PUBLIC_PORT}:${PUBLIC_PORT}

@@ -1,0 +1,208 @@
+{
+	"tasks": [{
+			"topic": "Rare disease detection from patient history records",
+			"description": "You have been selected by the Medical Association of West Virginia™ (MAWV) to help them with detecting rare diseases from patients’ medical histories. The MAWV has heard about large language models and is interested in using them to assist doctors in disease detection, either by making final decisions or through suggesting relevant information for the decision.",
+			"baseline": [
+				"A small annotated dataset of 1000 patient histories, each of which had a rare disease. The information is chronologically ordered, and information about when symptoms started is available",
+				"Unlabeled patient histories for 100 000 patients",
+				"Capability to fine-tune a SLM (e.g. T5, RoBERTa)"
+			],
+			"powerups": [
+				"The NSA grants you full access to each patients’ full daily routine!",
+				"You have found 50 enthusiastic medical specialists with a lot of free time to annotate additional data! However, they are limited with respect to training, and have to be used for a single annotation task.",
+				"You found a CSV file containing an additional 25000 annotated instances, half of which do not have any rare disease!",
+				"You got access to a SotA generative LLM (ChatGPT) (distractor), sadly without fine-tuning capabilities!"
+			]
+		},
+		{
+			"topic": "Conversational QA for Customer Support",
+			"description": "You’ve been selected by POSTE Italiane, the national postal service provider and also one of the largest Italian insurance companies, to help create a socially-acceptable robot assistant that supports customers in person in postal offices and with insurance claims. They know that you’re not an expert in robotics but with natural language processing. Hence, they want you to develop a next generation conversational language model that not only generates responses based on transcribed user utterances, but also by considering user behavior, i.e., gestures and emotions. Unfortunately, they can’t provide you with a dataset. You first need to collect it, for which you are given three months of time in which you can record any interaction in POSTE Italiane offices.",
+			"baseline": [
+				"No dataset, only descriptions of common procedures",
+				"Access to LLMs which were fine-tuned on dialogue datasets",
+				"Access to a pool of six domain experts",
+				"Capability to tune an LLM on 10000 instances"
+			],
+			"powerups": [
+				"Your colleagues from the chemistry department found a new drug that increases the productivity of student assistants by 1000%!",
+				"DeepMind has found a way to use GPT4 to increase the midi-chlorides in your body. You can now use the force to convince the other project partners what the other input signals (and your output signal) should look like.",
+				"Google just released Rambo, a new language model with 4 quadtrillion parameters that can also be finetuned just using a NVIDIA GeForce 7800 GTX. They also introduced a new and more efficient encoding mechanism that allows you to have input sequences up to 249.551 words."
+			]
+		},
+		{
+			"topic": "Fraud Detection From Tabular Data",
+			"description": "You are a data analyst working for Deutsche Bank in New York City. Fraud detection using Machine Learning has been a very important topic for your company in recent years. They’re already using a couple of different “old school” algorithms for that task. However, since language models made huge progress in understanding numbers recently, you are asked to explore their capabilities in Fraud Detection. Since tabular data is your primary data source, you phrase the task as numerical reasoning over tabular data.",
+			"baseline": [
+				"A dataset of 10000 transaction instances, where 1% contain fraud cases. The estimated proportion of fraud cases is much lower (0.001%)",
+				"You have access to a trained boosted tree ensemble baseline (XGBoost) which detects 70% of fraudulent transactions in practice.",
+				"Unlabeled histories of 1 000 000 (one million) transactions",
+				"Capability to tune a LLM and access to open-source LLMs"
+			],
+			"powerups": [
+				"The Imbalance Buster: Activate this power-up to magically balance your imbalanced datasets by creating new instances of the underrepresented class!",
+				"You gain access to a generative LLM which has been tuned for self-rationalization! It is able to accurately explain its decisions in plain English!",
+				"The CEO focus: a regulatory body has taken interest in your automated system, so the CEO has made its quality the companies’ top priority. You have access to all bank transactions and a large set of annotators to label fraudulent transactions"
+			]
+		},
+		{
+			"topic": "Machine Translation 2.0",
+			"description": "You are a Machine Learning Engineer at DeepL, one of the world’s leading companies in Machine Translation. The rise of LLMs and all these “new” pretraining paradigms, such as learning from chain-of-thought data, using instructions, etc., have vastly improved the accuracies of your competitor’s translation services, like Google or Microsoft. Your boss has come up with a novel, ground-breaking idea. In collaboration with Neuralink, you will translate language directly into thoughts, mapping every sentence into the users' internal language! The internal language, for this scenario, is defined as a 3000-dimensional dense vector.",
+			"baseline": [
+				"You have access to a a pretrained multilingual machine translation model, able to translate between 100 languages.",
+				"You have access to a dataset of 1000 sentences in various languages mapped to users' thought patterns (the dense vectors).",
+				"You have 10 test subjects with neuralink implants who you can use only once for 10 hours - before the devices overheat! (the subjects are totally fine, though)",
+				"You have access to a massive corpus of unstructured text in 100 languages.",
+				"You have the capability to fine-tune a model, however not train it from scratch."
+			],
+			"powerups": [
+				"You obtain a massive GPU cluster, you are now able to train and tune any openly available model on any data!",
+				"You hired 100 more test subjects! You can still use them for a maximum of 10 hours, though...",
+				"You hired 10000 annotators! You can use them to annotate your data in any way you want!",
+				"The users internal language can now be mapped to a knowledge graph! You obtain access to a model that maps user thoughts to a knowledge graph!"
+			]
+		},
+		{
+			"topic": "Continuous Learning From User Interaction Data",
+			"description": "You’re a Machine Learning Engineer at Meta AI. Your company was responsible for much of the progress in Conversational AI in the last years. However, you’re lacking behind when it comes to continuous learning from user interaction data. While competitors such as OpenAI magically seem to adapt to all kinds of user feedback even during conversation, your models can still just process binary feedback (satisfied/not satisfied) and require continuous training to show improvements. Your group leader asks you to find a way to incorporate other dimensions of user feedback into your training pipelines, such as free-text feedback, sentiment, emotions from user facial expressions, among others, and to find a way to create the illusion of the model to “magically” adapt to the user during conversation.",
+			"baseline": [
+				"Access to a pretrained text sentiment analysis and emotion detection model with 90% accuracy",
+				"Access to 1000 transcribed conversations",
+				"Five human annotators which can annotate ambiguous or difficult instances, but not the entire dataset",
+				"A pretrained SotA NER model which works with 100% accuracy",
+				"Capability to fine-tune LLMs and train a small vision model from scratch"
+			],
+			"powerups": [
+				"You gain access to 1000 hours of video material annotated with human emotions!",
+				"You gain access to GPT-4 for inference, which can process both image and text inputs - however its outputs might not be perfect for your use-case!",
+				"Adaptive Chameleon Cape: Grant your model the power of adaptation! This cape enables your model to blend seamlessly with any user's conversation style, colloquialisms, and even memes. It becomes a linguistic shapeshifter, effortlessly mimicking the user's tone and lingo.",
+				"Sentimental Sorcery Scroll: Unleash the power of emotions! This power-up enables your model to not only detect sentiment and emotions but also manipulate them. It can turn any negative feedback into positive vibes, leaving users in awe of its uncanny ability to turn frowns upside down."
+			]
+		},
+		{
+			"topic": "Machine Learning for Dispatching in PSAPs",
+			"description": "You’re a Machine Learning Engineer at RuntimeError Ltd., a London-based company specialized in software for public-safety access points (PSAP, Einsatzleitstelle). There is a call for bids from the City of London to improve the efficiency in mission planning of their central PSAP, i.e., which vehicle should be sent to which emergency. In detail, it is about dispatching emergency vehicles based on their current GPS position and traffic data (coordinates in WGS1984 format (Latitude, Longitude, e.g.,(41.49008, -71.312796)), estimated volume of emergencies in the next hours (time-series), and data from social media, e.g., tweets and trends from Twitter.  Your boss wants you to attempt to predict emergencies from social media data even before they are called in! Come up with an idea for the proposal.",
+			"baseline": [
+				"You have access to geospatial libraries like GeoPandas, Shapely, or Folium to handle GPS coordinates, that can be used to perform spatial operations, and visualize the data on maps.",
+				"You have access to pretrained models which can analyze sentiment and extract conversation topics from Twitter posts.",
+				"You have a small dataset of 1000 instances of emergencies, and the associated Twitter posts, some even including videos.",
+				"You have a large dataset of 10 million tweets, not annotated in any way.",
+				"You are able to tune small language models such as BERT and RoBERTa."
+			],
+			"powerups": [
+				"You gain access to a state-of-the-art model for action detection from videos! You can recognize if, and which potentially dangerous scenario is happening in the video",
+				"You gain access to a large knowledge base of emergency scenarios with detailed text descriptions of every emergency, how severe it is, and how to detect that it is happening",
+				"You are allowed to use 100 annotators for a single annotation task",
+				"You gain access to 10000 more instances of emergencies andthe associated Twitter posts!"
+			]
+		},
+		{
+			"topic": "Analysis of Crime Scenes",
+			"description": "You are researcher at Palantir Technologies, one of the world’s leading software companies specialized in software for federal intelligence agencies / police institutions. In order to compare interrogation transcripts with video recordings of the events of the crime, it is still common to have the video material analysed by the authorities, who then compare it with transcripts of the audio material in order to validate the testimony. The task is multifaceted. On the one hand, objects named in the statement have to be localised in the videos, on the other hand, actions performed by people have to be recognised. Your task is to develop an architecture and train a model that can do the job instead of humans.",
+			"baseline": [
+				"You have access to pretrained vision models for semantic segmentation such as YOLO (You Only Look Once) or Faster R-CNN (Region-based Convolutional Neural Networks)",
+				"You have access to action recognition datasets such as Kinetics, UCF101, or HMDB51 which contain labeled video clips of various human actions, to train and fine-tune action recognition models for the task.",
+				"You have access to pretrained vision image classification models, such as ResNet or video-based models like I3D (Inflated 3D ConvNet) as a starting point and fine-tune them using task-specific datasets. This way, you don't need to train something from scratch. You should also consider using ensambles instead of just one single model.",
+				"You have a dataset of 1000 videos of testimonies along with aligned transcriptions of these testimonies."
+			],
+			"powerups": [
+				"You gain access to 1000 annotators! You can use them for any annotation task, however they can only perform a single annotation task!",
+				"You obtain 10000 new aligned instances of video recordings of testimonies along with transcriptions of those testimonies!",
+				"Turbo Translator: Instantly translates any spoken language in the video footage to the language of your choice, allowing you to understand conversations in languages you don't know.",
+				"You gain access to a new extremely high resolution semantic segmentation model, along with the capabilities to fine-tune it."
+			]
+		},
+		{
+			"topic": "Entity and Relation Extraction From Historic Documents",
+			"description": "You are researcher specialized in NLP at the Sapienza University of Rome. You are working on a project with the Vatican Apostolic Archives to develop an approach to analyse and evaluate historical texts.The challenge here is not only to recognise text and historical characters on faded paper and parchment, but to analyse the text linguistically and create a graph that shows entities, objects, and their relations. For training of a potential Machine Learning model, they provide you with a small dataset of 100 texts and annotated graphs hand extracted from them.",
+			"baseline": [
+				"You have access to pre-trained models such as BERT, GPT, or RoBERTa and the capability to fine-tune these models.",
+				"You have access to a large text corpus of historical books, lexicons and dictionaries from the same era as the historic texts you analyse.",
+				"You have access to a pre-trained OCR model which perfroms reasonably well on the historic data, but no dataset to further tune it on."
+			],
+			"powerups": [
+				"You gain access to a large GPU based infrastructure! You can now train and tune any model you might want to.",
+				"You have received a large EU grant and can use the money for either hiring 1000 annotators for any task you want OR purchase an extremely accurate OCR model that works amazingly well on historic texts.",
+				"You obtain access to GoogleKB, an extremely historically accurate knowledge graph that contains all entities from the texts you are analysing!",
+				"You find 10000 more texts with annotated hand-extracted graphs!"
+			]
+		}
+	],
+	"questions": [{
+			"question": "What are potential experimental designs to conduct human evaluations?",
+			"answers": [
+				"Between-Subjects Design",
+				"Between Subjects",
+				"Between-Subjects",
+				"Within Subjects",
+				"Within-Subjects",
+				"Within-Subjects Design",
+				"Randomized Controlled Trials"
+			]
+		},
+		{
+			"question": "What is the name of the technique that is used to generate new data samples from existing ones by applying transformations such as adding noise, simulating faded text, or generating synthetic historical text samples?",
+			"answers": [
+				"Data Augmentation",
+				"Augmentation"
+			]
+		},
+		{
+			"question": "What technique is employed in data preprocessing to mitigate the prevalence of frequently occurring instances or entries within a dataset, particularly by eliminating redundant substrings?",
+			"answers": [
+				"Depulication",
+				"de-duplication",
+				"tokenization"
+			]
+		},
+		{
+			"question": "In the context of large language models, what term is used to describe the phenomenon when the model generates content that is not based on real or factual information, resembling a perceptual experience that occurs in the absence of external stimuli?",
+			"answers": [
+				"Hallucination",
+				"Halucination"
+			]
+		},
+		{
+			"question": "What is the scientific term used to denote the process of establishing the correspondence between linguistic expressions and real-world entities or concepts, thereby facilitating the model's comprehension of the meaning of words and sentences?",
+			"answers": [
+				"Grounding",
+				"semantic grounding",
+				"semantic interpretation"
+			]
+		},
+		{
+			"question": "What is the term commonly used to refer to the extensive pre-trained language models that serve as a basis for fine-tuning across a wide range of tasks?",
+			"answers": [
+				"Foundation models",
+				"Foundation Model",
+				"Foundation"
+			]
+		},
+		{
+			"question": "Which large AI focused company exhibits research practices which are in direct contrast to its name?",
+			"answers": [
+				"OpenAI",
+				"Open AI"
+			]
+		},
+		{
+			"question": "Do Webson and Pavlick claim that improvement LLMs gain from instructions is analogous to the way humans use instructions?",
+			"answers": [
+				"No"
+			]
+		},
+		{
+			"question": "How is the technique of prompting a LLM with a dense vector called?",
+			"answers": [
+				"Soft prompting",
+				"Continuous prompting"
+			]
+		},
+		{
+			"question": "How is the setup in which LLMs are used to perform a task they haven't seen during training called?",
+			"answers": [
+				"Zero-shot",
+				"zero shot"
+			]
+		}
+	]
+}
