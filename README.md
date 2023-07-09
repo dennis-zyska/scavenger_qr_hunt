@@ -10,11 +10,11 @@ screenshots in the folder `screenshots` to get an idea.
 
 ### Quickstart
 
+You need to have [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
+
 ```sh
-git clone <github-url> scavenger-qr-hunt
-cd scavenger-qr-hunt
-npm run docker #or
-docker-compose build && docker-compose up
+git clone https://github.com/dennis-zyska/scavenger_qr_hunt.git scavenger_qr_hunt && cd scavenger_qr_hunt
+docker-compose build && docker-compose up 
 ```
 
 You can open the app at http://localhost:8050 by default. Follow the setup for a quick start.
